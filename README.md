@@ -16,10 +16,23 @@ The primary goal was to analyze the Facebook dataset to uncover insights into th
 
 ### Data Processing and Graph Construction
 
-The dataset was processed using Rust programming, focusing on constructing an undirected graph to represent the Facebook network. Each node corresponded to a user, and edges represented mutual friendships. Key functions implemented in the codebase include:
+The dataset was processed using Rust programming, focusing on constructing an undirected graph to represent the Facebook network. Each node corresponded to a user, and edges represented mutual friendships. While progressing through the project, I realized the potential for enhancing the analysis of the Facebook network graph by optimizing the efficiency of average distance calculations and graph component analysis. This led to the development of several focused modules within the Rust codebase. The following key functions implemented in the codebase include:
 
-- `read_file`: Reads and imports the data, transforming it into a list of edges.
-- `Graph::create_undirected`: Constructs an undirected graph from the edge list.
+- In the `readfiles` module, I implemented `read_file` for efficiently reading and processing graph data from "facebook_combined.txt". This function lays the groundwork for constructing a comprehensive graph by providing a sorted list of edges.
+
+- The core graph construction and analysis are facilitated by the `Graph` struct and associated methods in the `readfiles` module. `Graph::create_undirected` is pivotal, creating an undirected graph from the list of edges, allowing for a more nuanced understanding of the network's structure.
+
+- Significant to the project is the `print_degrees` function. It calculates and reports the degrees of the most and least connected vertices, offering insight into the network's connectivity extremes. This function highlights key nodes, identifying influencers and isolated nodes within the network.
+
+- The `print_average_degree` function, integral to understanding the overall connectivity of the graph, computes and displays the average degree of the network. This metric is crucial for gauging the general interconnectedness of the Facebook network.
+
+- In the `component` module, `count_components` plays a vital role. It assesses the graph's connectivity by counting the number of distinct connected components, shedding light on the network's segmentation or integration.
+
+- The `bfs` module is critical for distance analysis. The `compute_average_distance_bfs` function, utilizing a Breadth-First Search approach, calculates the average distance between nodes. This is instrumental in understanding the 'degrees of separation' within the network.
+
+- Further, the `subgraph` function in the `bfs` module is used to create smaller, manageable subgraphs. This function is vital for analyzing average distances in more focused segments of the network, allowing for a detailed understanding of local network structures.
+
+- In the `print_average_distances` function, I employ these methods to analyze average distances not only in the entire graph but also in various subgraphs of different sizes. This multi-scale analysis provides a comprehensive view of the network's connectivity.
 
 ### Analysis Techniques
 
