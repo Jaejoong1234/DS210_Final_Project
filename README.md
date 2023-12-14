@@ -4,7 +4,7 @@
 
 ## Introduction
 
-For my final project in DS210, I chose the “Social Circles: Facebook” dataset, which encompasses a network of 4039 nodes and 88234 edges, representing mutual friendships on Facebook. The dataset offers a comprehensive look at user connections, featuring node features, circles, and ego networks. My interest in social networking and its implications for career development led me to select this dataset, particularly to explore the underlying patterns of connectivity and social reach within a large social network.
+For my final project in DS210, I used the “Social Circles: Facebook” dataset, which encompasses a network of 4039 nodes and 88234 edges, representing mutual friendships on Facebook. The dataset offers a comprehensive look at user connections, featuring node features, circles, and ego networks. My interest in social networking and its implications for career development led me to select this dataset, particularly to explore the underlying patterns of connectivity and social reach within a large social network.
 
 #### Data Link: https://snap.stanford.edu/data/ego-Facebook.html
 
