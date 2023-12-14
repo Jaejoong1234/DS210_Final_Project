@@ -49,7 +49,7 @@ The analysis of the Facebook dataset revealed significant insights into the stru
 
 ## How to Run the Project
 
-1. **Setup:** Ensure Rust and Cargo are installed on your system.
+1. **Setup:** Ensure Rust and Cargo are installed on the system.
 2. **Compilation:** Navigate to the project directory and run `cargo build`.
 3. **Execution:** Execute the program using `cargo run`.
 4. **Output:** The program outputs various statistics, including average distances, component counts, and degree information.
