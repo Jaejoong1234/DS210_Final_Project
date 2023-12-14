@@ -86,4 +86,4 @@ The analysis of the Facebook dataset revealed significant insights into the stru
 
 4. Calculating Average Degree
 - Question: Can you explain how to compute the average degree of a graph in Rust?
-- Answer: Sure, sum up all the vertex degrees by iterating over your degrees vector and then divide by the number of vertices to get the average degree. Since you've already stored the degrees in a vector, you can use the 'iter' and 'sum' methods to get the total degree count, then divide by the graph's vertex count.
+- Answer: Sure, sum up all the vertex degrees by iterating over your degrees vector and then divide by the number of vertices to get the average degree. Since you've already stored the degrees in a vector, you can use the `iter` and `sum` methods to get the total degree count, then divide by the graph's vertex count.
