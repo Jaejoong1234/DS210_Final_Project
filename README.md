@@ -67,3 +67,23 @@ The analysis of the Facebook dataset revealed significant insights into the stru
 3. **Execution:** Execute the program using `cargo run`.
 4. **Output:** The program outputs various statistics, including average distances, component counts, and degree information.
 
+## Resources
+### Lecture notes, TAs, Homeworks, Rust Official Documents, ChatGPT
+
+## ChatGPT Interactions
+
+1. Implementing Breadth-First Search (BFS)
+- Question: How can I implement a Breadth-First Search to find the average distance in a graph using Rust?
+- Answer: Implement BFS in Rust by using a queue (VecDeque) to keep track of nodes to visit. Initialize the queue with a starting node, and use a vector to keep track of visited nodes and their distances. Iterate through the queue, visiting adjacent nodes, and updating their distances. To find the average distance, sum the distances of all nodes and divide by the number of nodes.
+
+2. Counting Connected Components
+- Question: What's the best way to count the number of connected components in a Rust graph structure?
+- Answer: You can count connected components using a depth-first or breadth-first search algorithm. Initialize a count at zero, iterate over each vertex, and if it's not already visited, perform a DFS/BFS starting from that vertex and increment the count. Each DFS/BFS call would discover all vertices in a connected component.
+
+3. Analyzing Graph Degrees
+- Question: How do I calculate and print the degrees of vertices in a graph in Rust?
+- Answer: First, create a vector to store the degree count for each vertex. Iterate over the edges and increment the degree count for both vertices on each edge. You can then iterate over the degree vector to find and print the maximum and minimum degrees, which correspond to the most and least connected vertices.
+
+4. Calculating Average Degree
+- Question: Can you explain how to compute the average degree of a graph in Rust?
+- Answer: Sure, sum up all the vertex degrees by iterating over your degrees vector and then divide by the number of vertices to get the average degree. Since you've already stored the degrees in a vector, you can use the 'iter' and 'sum' methods to get the total degree count, then divide by the graph's vertex count.
