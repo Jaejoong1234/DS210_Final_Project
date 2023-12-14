@@ -14,7 +14,7 @@ The primary goal was to analyze the Facebook dataset to uncover insights into th
 
 ## Methodology
 
-### Data Processing and Graph Construction
+### Key Functions of Data Processing and Graph Construction
 
 The dataset was processed using Rust programming, focusing on constructing an undirected graph to represent the Facebook network. Each node corresponded to a user, and edges represented mutual friendships. While progressing through the project, I realized the potential for enhancing the analysis of the Facebook network graph by optimizing the efficiency of average distance calculations and graph component analysis. This led to the development of several focused modules within the Rust codebase. The following key functions implemented in the codebase include:
 
