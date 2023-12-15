@@ -74,7 +74,14 @@ The analysis of the Facebook dataset revealed significant insights into the stru
 
 1. Implementing Breadth-First Search (BFS)
 - Question: How can I implement a Breadth-First Search to find the average distance in a graph using Rust?
-- Answer: Implement BFS in Rust by using a queue (VecDeque) to keep track of nodes to visit. Initialize the queue with a starting node, and use a vector to keep track of visited nodes and their distances. Iterate through the queue, visiting adjacent nodes, and updating their distances. To find the average distance, sum the distances of all nodes and divide by the number of nodes.
+- Answer: Implementing a Breadth-First Search (BFS) to find the average distance in a graph using Rust involves several steps. Here's a general outline of how you can approach it: 1. Define the Graph Structure 2. Initialize the Graph 3. Breadth-First Search Function 4. Calculate Average Distance 5. Handling Edge Cases 6. Testing
+
+  <img width="527" alt="image" src="https://github.com/Jaejoong1234/DS210_Final_Project/assets/144245519/032270ef-5d78-4afa-91e9-23d4a5680cfa">
+  <img width="497" alt="image" src="https://github.com/Jaejoong1234/DS210_Final_Project/assets/144245519/bdb88019-6bf0-4607-9b35-047cf8490441">
+  <img width="497" alt="image" src="https://github.com/Jaejoong1234/DS210_Final_Project/assets/144245519/c414453b-232b-4dbb-85fc-f92acee51d0a">
+  <img width="505" alt="image" src="https://github.com/Jaejoong1234/DS210_Final_Project/assets/144245519/7d262bbf-97eb-45d9-b2c3-fda990474cb0">
+  <img width="495" alt="image" src="https://github.com/Jaejoong1234/DS210_Final_Project/assets/144245519/3ce4ac60-cf70-4da2-b950-205d8b051f86">
+  <img width="527" alt="image" src="https://github.com/Jaejoong1234/DS210_Final_Project/assets/144245519/a8407034-8470-4da9-bf78-b93d3dfdb347">
 
 2. Counting Connected Components
 - Question: What's the best way to count the number of connected components in a Rust graph structure?
